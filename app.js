@@ -11,8 +11,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public")); //for including static files like css and image in a dir called public
 
 mailchimp.setConfig({
-    server:"us17", //your server can be found at the end of your API-key.
-    apiKey:"8e514228152cce44128f8fc7fd7041b4",
+    server:"server", //your server can be found at the end of your API-key.
+    apiKey:"key",
 });
 
 app.get("/", function(req,res){
